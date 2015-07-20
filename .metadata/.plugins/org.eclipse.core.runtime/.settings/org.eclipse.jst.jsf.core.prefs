@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.jst.jsf.core.INCOMPATIBLE_METHOD_TYPES=ignore
+org.eclipse.jst.jsf.core.buildwarning_dont_show_again=always

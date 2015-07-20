@@ -1,0 +1,43 @@
+package br.com.caelum.notasfiscais.bean;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import br.com.caelum.notasfiscais.dao.ProdutoDao;
+import br.com.caelum.notasfiscais.modelo.Produto;
+
+@ManagedBean
+@SessionScoped
+public class ProdutoBean {
+	
+	public static final String
+			MSG_OK = "Produto Gravado com Sucesso",
+			MSG_ERROR = "Erro ao Gravar no Banco de Dados";
+
+	private Produto produto = new Produto();
+	
+	private String message = "";
+	
+	
+	public Produto getProduto() {
+		return produto;
+	}
+	
+	public String getMessage() {
+		return message;
+	}
+	
+	
+	public void setMessage(String str) {
+		this.message = str;
+	}
+	
+	
+	public void grava() {
+		ProdutoDao dao = new ProdutoDao();
+		dao.adiciona(produto);
+		produto = new Produto();
+		message = MSG_OK;
+	}
+	
+}

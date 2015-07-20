@@ -1,0 +1,24 @@
+package br.com.caelum.notasfiscais.bean;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import br.com.caelum.notasfiscais.modelo.Produto;
+
+@ManagedBean
+@SessionScoped
+public class ProdutoBean {
+
+	private Produto produto = new Produto();
+	
+	
+	public Produto getProduto() {
+		return produto;
+	}
+	
+	
+	public void grava() {
+		ProdutoDao dao = new ProdutoDao();
+	}
+	
+}
