@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<h:head>
+	<meta charset="UTF-8"/>
+	<title>SisNF</title>
+</h:head>
+
+<h:body>
+	<h:form id="form-vals">
+	<h:panelGrid columns="2">
+		<h:outputLabel value="Nome:" for="nome"/>
+		<h:inputText id="nome" value="#{produtoBean.produto.nome}"/>
+
+		<h:outputLabel value="Descrição:" for="descricao"/>		
+		<h:inputTextarea id="descricao" value="#{produtoBean.produto.descricao}"/>
+		
+		<h:outputLabel value="Preço:" for="preco"/>
+		<h:inputText id="preco" value="#{produtoBean.produto.preco}"/>
+
+		<h:inputHidden id="hidden-id" value="#{produtoBean.produto.id}"/>
+		
+		<h:panelGroup>
+			<h:commandButton value="Gravar" action="#{produtoBean.grava}">
+				<f:ajax execute="@form" render=":form-list :form-vals"/>
+			</h:commandButton>&#160;&#160; 
+			<h:commandButton rendered="#{produtoBean.produto.id != null}" 
+					value="Cancelar" action="#{produtoBean.clear()}"/>&#160;&#160; 
+			<h:outputText id="outmsg" value="[#{produtoBean.message}]"/>
+		</h:panelGroup>
+	</h:panelGrid>
+	</h:form>
+	
+	<br/>
+	<h:form id="form-list">
+	<h:dataTable id="product-list" value="#{produtoBean.produtos}" var="pd">
+		<h:column>
+			<f:facet name="header">Nome</f:facet>
+			#{pd.nome}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Descrição</f:facet>
+			#{pd.descricao}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Preço</f:facet>
+			#{pd.preco}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Remover/Editar</f:facet>
+			<h:commandLink action="#{produtoBean.remove(pd)}" value="[X]">
+				<f:ajax render=":form-list"/>
+			</h:commandLink>&#160;&#160; 
+			<h:commandLink value="[-]">
+				<f:setPropertyActionListener value="#{pd}" target="#{produtoBean.produto}"/>
+				<f:setPropertyActionListener value="#{''}" target="#{produtoBean.message}"/>
+				<f:ajax render=":form-list :form-vals"/>
+			</h:commandLink>
+		</h:column>
+	</h:dataTable>
+	</h:form>
+</h:body>
+</html>

@@ -13,9 +13,8 @@ import br.com.caelum.notasfiscais.modelo.Produto;
 public class ProdutoBean {
 	
 	public static final String
-			MSG_OK = "Produto Gravado com Sucesso",
-			MSG_RM_OK = "Produto Removido com Sucesso",
-			MSG_ERROR = "Erro ao Gravar no Banco de Dados";
+			MSG_OK = "Produto %s com Sucesso",
+			MSG_ERROR = "Erro ao %s";
 
 	private ProdutoDao dao = new ProdutoDao();
 	
@@ -29,6 +28,12 @@ public class ProdutoBean {
 	public Produto getProduto() {
 		return produto;
 	}
+	
+	
+	public void setProduto(Produto pd) {
+		produto = pd;
+	}
+	
 	
 	public String getMessage() {
 		return message;
@@ -49,11 +54,20 @@ public class ProdutoBean {
 	}
 	
 	
-	public void grava() {
-		dao.adiciona(produto);
+	public void gravar() {
+		if(produto == null) return;
+		String acao = "Gravado";
+		if(produto.getId() != null) {
+			dao.atualiza(produto);
+			acao = "Atualizado";
+		}
+		else {
+			dao.adiciona(produto);
+		}
+		System.out.println("* ProdutoBean.gravar()");
 		produto = new Produto();
 		produtos = dao.listaTodos();
-		message = MSG_OK;
+		message = String.format(MSG_OK, acao);
 	}
 	
 	
@@ -61,8 +75,17 @@ public class ProdutoBean {
 		if(pd != null) {
 			dao.remove(pd);
 		}
+		System.out.println("* ProdutoBean.remove( "+ pd+ " )");
+		produto = new Produto();
 		produtos = dao.listaTodos();
-		message = MSG_RM_OK;
+		message = String.format(MSG_OK, "Removido");
+	}
+	
+	
+	public void clear() {
+		System.out.println("* ProdutoBean.clear()");
+		produto = new Produto();
+		message = "";
 	}
 	
 }
