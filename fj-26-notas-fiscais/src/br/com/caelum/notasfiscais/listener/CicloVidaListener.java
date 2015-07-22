@@ -6,12 +6,14 @@ import javax.faces.event.PhaseListener;
 
 public class CicloVidaListener implements PhaseListener {
 
+	private static final long serialVersionUID = -4127548010174187980L;
+
 	public void afterPhase(PhaseEvent ev) {
-		System.out.println("** Depois da fase: "+ ev.getPhaseId());
+		//System.out.println("** Depois da fase: "+ ev.getPhaseId());
 	}
 	
 	public void beforePhase(PhaseEvent ev) {
-		System.out.println("** Antes da fase: "+ ev.getPhaseId());
+		//System.out.println("** Antes da fase: "+ ev.getPhaseId());
 	}
 	
 	public PhaseId getPhaseId() {

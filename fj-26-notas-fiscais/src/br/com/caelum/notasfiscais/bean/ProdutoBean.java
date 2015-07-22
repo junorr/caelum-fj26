@@ -2,21 +2,22 @@ package br.com.caelum.notasfiscais.bean;
 
 import java.util.List;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import br.com.caelum.notasfiscais.dao.ProdutoDao;
 import br.com.caelum.notasfiscais.modelo.Produto;
 
-@ManagedBean
-@SessionScoped
+@Named
+@RequestScoped
 public class ProdutoBean {
 	
 	public static final String
 			MSG_OK = "Produto %s com Sucesso",
 			MSG_ERROR = "Erro ao %s";
 
-	private ProdutoDao dao = new ProdutoDao();
+	@Inject private ProdutoDao dao;
 	
 	private Produto produto = new Produto();
 	

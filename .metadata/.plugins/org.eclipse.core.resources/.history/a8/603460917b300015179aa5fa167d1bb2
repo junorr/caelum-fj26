@@ -1,0 +1,11 @@
+package br.com.caelum.notasfiscais.bean;
+
+public enum WebPage {
+
+	LOGIN, PRODUTO;
+	
+	public String toString() {
+		return this.name().toLowerCase();
+	}
+	
+}

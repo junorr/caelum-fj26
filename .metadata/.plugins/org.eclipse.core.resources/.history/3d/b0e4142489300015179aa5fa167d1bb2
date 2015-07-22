@@ -1,0 +1,40 @@
+package br.com.caelum.notasfiscais.bean;
+
+import java.io.Serializable;
+
+import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.caelum.notasfiscais.dao.UsuarioDao;
+import br.com.caelum.notasfiscais.modelo.Usuario;
+
+@Named(value="login")
+@RequestScoped
+public class LoginBean implements Serializable {
+
+	private static final long serialVersionUID = -5691869800662132153L;
+
+	
+	@Inject private UsuarioLogado logged;
+	
+	@Inject private UsuarioDao dao;
+	
+	private String message = "";
+	
+	
+	public String getMessage() {
+		return message;
+	}
+	
+	
+	public String login() {
+		if(dao.existe(logged.getUser())) {
+			message = "";
+			return WebPage.PRODUTO.toString();
+		}
+		message = "Credenciais Inválidas!";
+		return null;
+	}
+	
+}

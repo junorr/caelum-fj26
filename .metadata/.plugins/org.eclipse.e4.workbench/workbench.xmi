@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_7Fp7gC-_EeW6iak8XAz84A" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_7Fp7gS-_EeW6iak8XAz84A" bindingContexts="_7FqlHC-_EeW6iak8XAz84A">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Produto.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Produto.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Produto.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CicloVidaListener.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/listener/CicloVidaListener.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/listener/CicloVidaListener.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor&quot; name=&quot;faces-config.xml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/WEB-INF/faces-config.xml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/WEB-INF/faces-config.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;pom.properties&quot; tooltip=&quot;/home/jsf5316/glassfish4/glassfish/modules/javax.faces.jar/META-INF/maven/org.glassfish/javax.faces/pom.properties&quot;>&#xA;&lt;persistable element=&quot;=fj-26-notas-fiscais/\/home\/jsf5316\/glassfish4\/glassfish\/modules\/javax.faces.jar&quot; path=&quot;META-INF/maven/org.glassfish/javax.faces/pom.properties&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;style.css&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/resources/css/style.css&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/resources/css/style.css&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoDao.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/ProdutoDao.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/ProdutoDao.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;produto.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/produto.xhtml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/produto.xhtml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoBean.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/ProdutoBean.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/ProdutoBean.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;web.xml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/WEB-INF/web.xml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/WEB-INF/web.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/index.xhtml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/index.xhtml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ComponentResolver.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/util/ComponentResolver.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/util/ComponentResolver.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jpt.jpa.ui.internal.editors.PersistenceEditor&quot; name=&quot;persistence.xml&quot; tooltip=&quot;fj-26-notas-fiscais/src/META-INF/persistence.xml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/META-INF/persistence.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.wst.server.ui.editor.input.factory&quot; id=&quot;org.eclipse.wst.server.ui.editor&quot; name=&quot;GlassFish 4.0&quot; tooltip=&quot;GlassFish 4.0&quot;>&#xA;&lt;persistable server-id=&quot;GlassFish 4.0&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;produto.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/produto.xhtml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/produto.xhtml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UsuarioLogado.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/UsuarioLogado.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/UsuarioLogado.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LoginBean.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/LoginBean.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/LoginBean.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;login.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/login.xhtml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/login.xhtml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoBean.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/ProdutoBean.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/ProdutoBean.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;JPAUtil.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/util/JPAUtil.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/util/JPAUtil.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;beans.xml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/WEB-INF/beans.xml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/WEB-INF/beans.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;bean.xml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/WEB-INF/bean.xml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/WEB-INF/bean.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoDao.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/ProdutoDao.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/ProdutoDao.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;WebPage.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/WebPage.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/WebPage.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Usuario.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Usuario.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Usuario.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/index.xhtml&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/WebContent/index.xhtml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UsuarioDao.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/UsuarioDao.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/UsuarioDao.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CicloVidaListener.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/listener/CicloVidaListener.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/listener/CicloVidaListener.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Produto.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Produto.java&quot;>&#xA;&lt;persistable path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Produto.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_7Fp7gS-_EeW6iak8XAz84A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_7Fp7gi-_EeW6iak8XAz84A" label="%trimmedwindow.label.eclipseSDK" x="0" y="24" width="1024" height="720">
@@ -78,7 +78,7 @@
               <children xsi:type="advanced:Placeholder" xmi:id="_7Fp7iS-_EeW6iak8XAz84A" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_7Fp9XC-_EeW6iak8XAz84A"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_7Fp7ii-_EeW6iak8XAz84A" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_7Fp9XS-_EeW6iak8XAz84A"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_7Fp7iy-_EeW6iak8XAz84A" containerData="7500" selectedElement="_7Fp7jC-_EeW6iak8XAz84A">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_7Fp7iy-_EeW6iak8XAz84A" containerData="7500" selectedElement="_7Fp7kS-_EeW6iak8XAz84A">
               <children xsi:type="basic:PartSashContainer" xmi:id="_7Fp7jC-_EeW6iak8XAz84A" containerData="7000" selectedElement="_7Fp7jS-_EeW6iak8XAz84A" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_7Fp7jS-_EeW6iak8XAz84A" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_7Fp80y-_EeW6iak8XAz84A"/>
                 <children xsi:type="basic:PartStack" xmi:id="_7Fp7ji-_EeW6iak8XAz84A" elementId="topRight" toBeRendered="false" containerData="3000">
@@ -87,8 +87,9 @@
                   <children xsi:type="advanced:Placeholder" xmi:id="_7Fp7kC-_EeW6iak8XAz84A" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" toBeRendered="false" ref="_7Fp9sC-_EeW6iak8XAz84A"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_7Fp7kS-_EeW6iak8XAz84A" elementId="bottomRight" containerData="3000" selectedElement="_7Fp7mS-_EeW6iak8XAz84A">
+              <children xsi:type="basic:PartStack" xmi:id="_7Fp7kS-_EeW6iak8XAz84A" elementId="bottomRight" containerData="3000" selectedElement="_7Fp7lC-_EeW6iak8XAz84A">
                 <tags>newtablook</tags>
+                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_7Fp7ki-_EeW6iak8XAz84A" elementId="org.eclipse.ui.views.AllMarkersView" ref="_7Fp9Xi-_EeW6iak8XAz84A"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_7Fp7ky-_EeW6iak8XAz84A" elementId="org.eclipse.ui.views.PropertySheet" ref="_7Fp9YS-_EeW6iak8XAz84A"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_7Fp7lC-_EeW6iak8XAz84A" elementId="org.eclipse.wst.server.ui.ServersView" ref="_7Fp9Yi-_EeW6iak8XAz84A"/>
@@ -135,9 +136,8 @@
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_7Fp81S-_EeW6iak8XAz84A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Produto.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Produto.java&quot; partName=&quot;Produto.java&quot; title=&quot;Produto.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Produto.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Produto.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;874&quot; selectionTopPixel=&quot;598&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Produto.java&quot; partName=&quot;Produto.java&quot; title=&quot;Produto.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Produto.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Produto.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;874&quot; selectionTopPixel=&quot;632&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -159,7 +159,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_7Fp82S-_EeW6iak8XAz84A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ProdutoDao.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoDao.java&quot; partName=&quot;ProdutoDao.java&quot; title=&quot;ProdutoDao.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/ProdutoDao.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/ProdutoDao.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;10&quot; selectionOffset=&quot;1501&quot; selectionTopPixel=&quot;698&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoDao.java&quot; partName=&quot;ProdutoDao.java&quot; title=&quot;ProdutoDao.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/ProdutoDao.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/ProdutoDao.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;487&quot; selectionTopPixel=&quot;145&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -181,11 +181,10 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_7Fp83S-_EeW6iak8XAz84A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="produto.xhtml" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;produto.xhtml&quot; partName=&quot;produto.xhtml&quot; title=&quot;produto.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/produto.xhtml&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/WebContent/produto.xhtml&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1067&quot; selectionTopPixel=&quot;340&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;produto.xhtml&quot; partName=&quot;produto.xhtml&quot; title=&quot;produto.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/produto.xhtml&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/WebContent/produto.xhtml&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;443&quot; selectionTopPixel=&quot;146&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
           <menus xsi:type="menu:PopupMenu" xmi:id="_7Fp83i-_EeW6iak8XAz84A" elementId="jsf.facelet.source.EditorContext">
             <tags>menuContribution:popup</tags>
             <tags>popup:jsf.facelet.source.EditorContext</tags>
@@ -216,7 +215,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_7Fp84y-_EeW6iak8XAz84A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ProdutoBean.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoBean.java&quot; partName=&quot;ProdutoBean.java&quot; title=&quot;ProdutoBean.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/ProdutoBean.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/ProdutoBean.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;31&quot; selectionOffset=&quot;1196&quot; selectionTopPixel=&quot;1123&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProdutoBean.java&quot; partName=&quot;ProdutoBean.java&quot; title=&quot;ProdutoBean.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/ProdutoBean.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/ProdutoBean.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;7&quot; selectionOffset=&quot;278&quot; selectionTopPixel=&quot;96&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -238,7 +237,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_7Fp85y-_EeW6iak8XAz84A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CicloVidaListener.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CicloVidaListener.java&quot; partName=&quot;CicloVidaListener.java&quot; title=&quot;CicloVidaListener.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/listener/CicloVidaListener.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/listener/CicloVidaListener.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;356&quot; selectionTopPixel=&quot;17&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CicloVidaListener.java&quot; partName=&quot;CicloVidaListener.java&quot; title=&quot;CicloVidaListener.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/listener/CicloVidaListener.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/listener/CicloVidaListener.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;332&quot; selectionTopPixel=&quot;3&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -259,43 +258,59 @@
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_7Fp86y-_EeW6iak8XAz84A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="faces-config.xml" iconURI="platform:/plugin/org.eclipse.jst.jsf.facesconfig.ui/icons/facesconfig/FacesConfig_Plugin.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor&quot; name=&quot;faces-config.xml&quot; partName=&quot;faces-config.xml&quot; title=&quot;faces-config.xml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/WEB-INF/faces-config.xml&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/WebContent/WEB-INF/faces-config.xml&quot;/>&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_qqqAEDBsEeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="login.xhtml" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;login.xhtml&quot; partName=&quot;login.xhtml&quot; title=&quot;login.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/login.xhtml&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/WebContent/login.xhtml&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;843&quot; selectionTopPixel=&quot;275&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor</tags>
+          <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
           <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_7Fp87C-_EeW6iak8XAz84A" elementId="org.eclipse.jst.jsf.facesconfig.ui.pageflow.editor.contextmenu">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.jst.jsf.facesconfig.ui.pageflow.editor.contextmenu</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_7Fp87S-_EeW6iak8XAz84A" elementId="org.eclipse.jst.jsf.facesconfig.facesConfigFile.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.jst.jsf.facesconfig.facesConfigFile.source.EditorContext</tags>
-            <tags>popup:.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_7Fp87i-_EeW6iak8XAz84A" elementId="org.eclipse.jst.jsf.facesconfig.facesConfigFile.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.jst.jsf.facesconfig.facesConfigFile.source.RulerContext</tags>
-            <tags>popup:.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_7Fp87y-_EeW6iak8XAz84A" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_7Fp88C-_EeW6iak8XAz84A" elementId="org.eclipse.jst.jsf.facesconfig.facesConfigFile.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.jst.jsf.facesconfig.facesConfigFile.source.EditorContext</tags>
-            <tags>popup:.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_7Fp88S-_EeW6iak8XAz84A" elementId="org.eclipse.jst.jsf.facesconfig.facesConfigFile.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.jst.jsf.facesconfig.facesConfigFile.source.RulerContext</tags>
-            <tags>popup:.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_3_QCoDBsEeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LoginBean.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LoginBean.java&quot; partName=&quot;LoginBean.java&quot; title=&quot;LoginBean.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/LoginBean.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/LoginBean.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;283&quot; selectionTopPixel=&quot;65&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_i1It8DBvEeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UsuarioDao.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UsuarioDao.java&quot; partName=&quot;UsuarioDao.java&quot; title=&quot;UsuarioDao.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/UsuarioDao.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/dao/UsuarioDao.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;375&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_xuS6kDBvEeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="WebPage.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;WebPage.java&quot; partName=&quot;WebPage.java&quot; title=&quot;WebPage.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/WebPage.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/WebPage.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;230&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_MjgCcDBwEeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Usuario.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Usuario.java&quot; partName=&quot;Usuario.java&quot; title=&quot;Usuario.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Usuario.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/modelo/Usuario.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;275&quot; selectionTopPixel=&quot;17&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_h1mHEDBwEeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.xhtml" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.xhtml&quot; partName=&quot;index.xhtml&quot; title=&quot;index.xhtml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/index.xhtml&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/WebContent/index.xhtml&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_qaJEkDB8EeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="JPAUtil.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;JPAUtil.java&quot; partName=&quot;JPAUtil.java&quot; title=&quot;JPAUtil.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/util/JPAUtil.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/util/JPAUtil.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;296&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_qhrTIDCAEeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="beans.xml" iconURI="platform:/plugin/org.eclipse.wst.xml.ui/icons/xmldoc.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;beans.xml&quot; partName=&quot;beans.xml&quot; title=&quot;beans.xml&quot; tooltip=&quot;fj-26-notas-fiscais/WebContent/WEB-INF/beans.xml&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/WebContent/WEB-INF/beans.xml&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_1lRfQDCHEeWlm9mAgcAE-Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UsuarioLogado.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UsuarioLogado.java&quot; partName=&quot;UsuarioLogado.java&quot; title=&quot;UsuarioLogado.java&quot; tooltip=&quot;fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/UsuarioLogado.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/fj-26-notas-fiscais/src/br/com/caelum/notasfiscais/bean/UsuarioLogado.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;389&quot; selectionTopPixel=&quot;344&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -343,6 +358,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Server</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_7Fp9Yy-_EeW6iak8XAz84A" elementId="org.eclipse.wst.server.ui.ServersView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -351,7 +368,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.wst.server.ui.ServersView</tags>
       </menus>
-      <toolbar xmi:id="_7Fp9ki-_EeW6iak8XAz84A" elementId="org.eclipse.wst.server.ui.ServersView" visible="false"/>
+      <toolbar xmi:id="_7Fp9ki-_EeW6iak8XAz84A" elementId="org.eclipse.wst.server.ui.ServersView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_7Fp9mi-_EeW6iak8XAz84A" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Data Source Explorer" iconURI="platform:/plugin/org.eclipse.datatools.connectivity.ui.dse/icons/full/cview16/enterprise_explorer.gif" closeable="true">
       <tags>View</tags>
@@ -373,6 +390,7 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>highlighted</tags>
       <menus xmi:id="_7Fp9ny-_EeW6iak8XAz84A" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -381,7 +399,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.ui.MessageConsole.#ContextMenu</tags>
       </menus>
-      <toolbar xmi:id="_7Fp9oS-_EeW6iak8XAz84A" elementId="org.eclipse.ui.console.ConsoleView"/>
+      <toolbar xmi:id="_7Fp9oS-_EeW6iak8XAz84A" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_7Fp9qi-_EeW6iak8XAz84A" elementId="org.eclipse.ui.views.BookmarkView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Bookmarks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/bkmrk_nav.png" closeable="true">
       <tags>View</tags>
@@ -420,40 +438,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7FqilC-_EeW6iak8XAz84A" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqilS-_EeW6iak8XAz84A" elementId="new.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqili-_EeW6iak8XAz84A" elementId="newWizardDropDown">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqily-_EeW6iak8XAz84A" elementId="new.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqimC-_EeW6iak8XAz84A" elementId="save.group" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqimS-_EeW6iak8XAz84A" elementId="save">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqimi-_EeW6iak8XAz84A" elementId="saveAll">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqimy-_EeW6iak8XAz84A" elementId="save.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_7FqinC-_EeW6iak8XAz84A" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_7FsYNi-_EeW6iak8XAz84A"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqinS-_EeW6iak8XAz84A" elementId="print.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqini-_EeW6iak8XAz84A" elementId="build.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqiny-_EeW6iak8XAz84A" elementId="build.ext" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqioC-_EeW6iak8XAz84A" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4BSfcDBrEeWlm9mAgcAE-Q" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_7FsYNi-_EeW6iak8XAz84A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7FqioS-_EeW6iak8XAz84A" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -461,111 +446,24 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi0S-_EeW6iak8XAz84A" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi0i-_EeW6iak8XAz84A" elementId="debug">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi0y-_EeW6iak8XAz84A" elementId="org.eclipse.debug.internal.ui.actions.DebugDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi1C-_EeW6iak8XAz84A" elementId="org.eclipse.debug.internal.ui.actions.RunDropDownAction">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi1S-_EeW6iak8XAz84A" elementId="org.eclipse.ui.externaltools.ExternalToolMenuDelegateToolbar">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi1i-_EeW6iak8XAz84A" elementId="org.eclipse.jst.j2ee.J2eeMainActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi1y-_EeW6iak8XAz84A" elementId="J2EEMain">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi2C-_EeW6iak8XAz84A" elementId="org.eclipse.jst.j2ee.internal.actions.NewJavaEEProject">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi2S-_EeW6iak8XAz84A" elementId="org.eclipse.jst.j2ee.internal.actions.NewJavaEEArtifact">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi2i-_EeW6iak8XAz84A" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi2y-_EeW6iak8XAz84A" elementId="Search">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi3C-_EeW6iak8XAz84A" elementId="openType">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi3S-_EeW6iak8XAz84A" elementId="org.eclipse.mylyn.tasks.ui.openTask">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi3i-_EeW6iak8XAz84A" elementId="org.eclipse.search.OpenSearchDialogPage">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi3y-_EeW6iak8XAz84A" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi4C-_EeW6iak8XAz84A" elementId="Presentation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi4S-_EeW6iak8XAz84A" elementId="org.eclipse.jdt.ui.edit.text.java.toggleBreadcrumb">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi4i-_EeW6iak8XAz84A" elementId="org.eclipse.jdt.ui.edit.text.java.toggleMarkOccurrences">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi4y-_EeW6iak8XAz84A" elementId="org.eclipse.mylyn.java.ui.editor.folding.auto">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi5C-_EeW6iak8XAz84A" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi5S-_EeW6iak8XAz84A" elementId="org.eclipse.ui.edit.text.toggleShowWhitespaceCharacters">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi5i-_EeW6iak8XAz84A" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi5y-_EeW6iak8XAz84A" elementId="org.eclipse.wst.server.ui.internal.webbrowser.actionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi6C-_EeW6iak8XAz84A" elementId="browser">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi6S-_EeW6iak8XAz84A" elementId="org.eclipse.wst.server.ui.internal.webbrowser.action.open">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi6i-_EeW6iak8XAz84A" elementId="org.eclipse.wst.ws.explorer.explorer">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi6y-_EeW6iak8XAz84A" elementId="additions">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi7C-_EeW6iak8XAz84A" elementId="org.eclipse.wst.ws.internal.explorer.action.LaunchWSEAction">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi7S-_EeW6iak8XAz84A" elementId="org.jboss.tools.jst.web.ui.server.actionSet">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi7i-_EeW6iak8XAz84A" elementId="SelectServer">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi7y-_EeW6iak8XAz84A" elementId="org.jboss.tools.jst.web.ui.action.server.SelectServerActionDelegate">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi8C-_EeW6iak8XAz84A" elementId="server">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi8S-_EeW6iak8XAz84A" elementId="org.jboss.tools.jst.web.ui.action.server.RunServerActionDelegate">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi8i-_EeW6iak8XAz84A" elementId="org.jboss.tools.jst.web.ui.action.server.DebugServerActionDelegate">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi8y-_EeW6iak8XAz84A" elementId="org.jboss.tools.jst.web.ui.action.server.StopServerActionDelegate">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi9C-_EeW6iak8XAz84A" elementId="org.jboss.tools.jst.web.ui.action.server.ChangeTimeStampActionDelegate">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi9S-_EeW6iak8XAz84A" elementId="group.nav" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -573,76 +471,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7Fqi9y-_EeW6iak8XAz84A" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi-C-_EeW6iak8XAz84A" elementId="history.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi-S-_EeW6iak8XAz84A" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi-i-_EeW6iak8XAz84A" elementId="backardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi-y-_EeW6iak8XAz84A" elementId="forwardHistory">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi_C-_EeW6iak8XAz84A" elementId="pin.group">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_7Fqi_S-_EeW6iak8XAz84A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_7FsX3i-_EeW6iak8XAz84A"/>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi_i-_EeW6iak8XAz84A" elementId="org.eclipse.ui.edit.text.gotoNextAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7Fqi_y-_EeW6iak8XAz84A" elementId="org.eclipse.ui.edit.text.gotoPreviousAnnotation">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjAC-_EeW6iak8XAz84A" elementId="org.eclipse.ui.edit.text.gotoLastEditPosition">
-          <tags>Opaque</tags>
-        </children>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_7FqjAS-_EeW6iak8XAz84A" elementId="org.eclipse.wst.html.core.htmlsource.source" visible="false">
-        <tags>Draggable</tags>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_7FqjAi-_EeW6iak8XAz84A" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
-        <tags>Draggable</tags>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_7FqjAy-_EeW6iak8XAz84A" elementId="org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor" visible="false">
-        <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjBC-_EeW6iak8XAz84A" elementId="undo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjBS-_EeW6iak8XAz84A" elementId="redo">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjBi-_EeW6iak8XAz84A">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjBy-_EeW6iak8XAz84A" elementId="org.eclipse.gef.align_left">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjCC-_EeW6iak8XAz84A" elementId="org.eclipse.gef.align_center">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjCS-_EeW6iak8XAz84A" elementId="org.eclipse.gef.align_right">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjCi-_EeW6iak8XAz84A">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjCy-_EeW6iak8XAz84A" elementId="org.eclipse.gef.align_top">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjDC-_EeW6iak8XAz84A" elementId="org.eclipse.gef.align_middle">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjDS-_EeW6iak8XAz84A" elementId="org.eclipse.gef.align_bottom">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjDi-_EeW6iak8XAz84A">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjDy-_EeW6iak8XAz84A" elementId="org.eclipse.gef.zoom_widget">
-          <tags>Opaque</tags>
-        </children>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4BZNIDBrEeWlm9mAgcAE-Q" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_7FsX3i-_EeW6iak8XAz84A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7FqjEC-_EeW6iak8XAz84A" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -654,12 +483,6 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7FqjFC-_EeW6iak8XAz84A" elementId="org.eclipse.ui.workbench.help" visible="false">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjFS-_EeW6iak8XAz84A" elementId="group.help">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_7FqjFi-_EeW6iak8XAz84A" elementId="group.application" visible="false">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolControl" xmi:id="_7FqjFy-_EeW6iak8XAz84A" elementId="PerspectiveSpacer" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
         <tags>stretch</tags>
@@ -1739,6 +1562,23 @@
     <tags>View</tags>
     <tags>categoryTag:JMX</tags>
   </descriptors>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_7FryQy-_EeW6iak8XAz84A" elementId="org.eclipse.jdt.ui.correction.inlineLocal.assist" commandName="Quick Assist - Inline local variable" description="Invokes quick assist and selects 'Inline local variable'" category="_7FsZxi-_EeW6iak8XAz84A"/>
   <commands xmi:id="_7FryRC-_EeW6iak8XAz84A" elementId="org.eclipse.ui.edit.text.select.pageUp" commandName="Select Page Up" description="Select to the top of the page" category="_7FsZpi-_EeW6iak8XAz84A"/>
   <commands xmi:id="_7FryRS-_EeW6iak8XAz84A" elementId="org.eclipse.egit.ui.history.ResetQuickdiffBaseline" commandName="Reset quickdiff baseline" category="_7FsZzC-_EeW6iak8XAz84A">

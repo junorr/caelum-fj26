@@ -1,0 +1,40 @@
+package br.com.caelum.notasfiscais.bean;
+
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
+
+import br.com.caelum.notasfiscais.modelo.Usuario;
+
+@Named
+@SessionScoped
+public class UsuarioLogado {
+
+	private Usuario user;
+	
+	
+	public UsuarioLogado() {
+		user = new Usuario();
+	}
+	
+	
+	public Usuario getUser() {
+		return user;
+	}
+	
+	
+	public void setUser(Usuario user) {
+		if(user != null)
+			this.user = user;
+	}
+	
+	
+	public void logout() {
+		this.setUser(new Usuario());
+	}
+	
+	
+	public boolean isLogged() {
+		return user.getLogin() != null;
+	}
+	
+}

@@ -11,6 +11,22 @@
 <h:body>
 	<div id="cabecalho">
 		<h:graphicImage name="logo-uber.png" library="imagens"/>
+		<div style="font-weight: bold; 
+						color: white; 
+						position: absolute; 
+						margin-left: 27%; 
+						display: #{logged.user.login != null ? 'inline' : 'none'};
+						margin-top: 22px;">
+			<h:form id="form-logout">
+				<h:panelGrid columns="3">
+					<h:commandLink id="lnk-logout" action="#{login.logout()}" value="Logout" style="color: white;">
+						<f:ajax/>
+					</h:commandLink>
+					&#160;&#160;&#160;&#160;&#160;&#160;
+					<h:outputText id="user-name" value="Bem Vindo&#160; #{logged.user.login}"/>
+				</h:panelGrid>
+			</h:form>
+		</div>
 	</div>
 	
 	<fieldset><legend>Dados do Produto</legend>
@@ -30,11 +46,12 @@
 		<h:panelGroup>
 			<h:commandButton value="Gravar" action="#{produtoBean.gravar()}">
 				<f:ajax execute=":form-vals :form-list" render=":form-vals :form-list"/>
-			</h:commandButton>&#160;&#160; 
-			<h:commandButton 
-					value="Cancelar" action="#{produtoBean.clear()}">
+			</h:commandButton>&#160;&#160;
+			
+			<h:commandButton value="Cancelar" action="#{produtoBean.clear()}"
+					style="display: #{produtoBean.produto.id != null ? 'inline' : 'none'};">
 				<f:ajax render=":form-vals :form-list" execute=":form-vals :form-list"/>
-			</h:commandButton>&#160;&#160; 
+			</h:commandButton>&#160;&#160;
 			<h:outputText id="outmsg" value="[#{produtoBean.message}]"/>
 		</h:panelGroup>
 	</h:panelGrid>
