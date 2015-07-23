@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<h:head>
+	<meta charset="UTF-8"/>
+	<title>SisNF - Login</title>
+	<h:outputStylesheet name="style.css" library="css"/>
+</h:head>
+
+<h:body>
+	<div id="cabecalho">
+		<h:graphicImage name="logo-uber.png" library="imagens"/>
+		<div style="font-weight: bold; 
+						color: white; 
+						position: absolute; border: solid thin black;
+						margin-left: 85%; 
+						margin-top: -50px;">
+
+			<h:panelGrid columns="3">						
+				<h:link id="lnk-prod" value="Produtos" outcome="produto.xhtml" style="color: white;"/>
+
+				&#160;&#160;&#160;&#160;&#160;&#160;
+			
+				<h:link id="lnk-usr" value="Usuários" outcome="usuario.xhtml" style="color: white;"/>
+			</h:panelGrid>
+		</div>
+	</div>
+	
+	<h3>Autenticação</h3>
+	<fieldset><legend>Dados de Usuario</legend>
+	<h:form>
+	<h:panelGrid columns="2">
+		<h:outputLabel value="Login:" for="ilogin"/>
+		<h:inputText id="ilogin" value="#{login.user.login}"/>
+
+		<h:outputLabel value="Senha:" for="isenha"/>		
+		<h:inputSecret id="isenha" value="#{login.user.senha}"/>
+		
+		<h:commandButton value="Login" action="#{login.login()}">
+			<f:ajax render="login-message" execute="@form"/>
+		</h:commandButton> 
+		<h:outputText id="login-message" value="&#160;&#160; #{login.message}"/>
+	</h:panelGrid>
+	</h:form>
+	</fieldset>
+
+	<div id="rodape">Copyright 2015. Todos os direitos reservados a Juno</div>
+</h:body>
+</html>

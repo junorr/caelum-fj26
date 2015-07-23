@@ -37,7 +37,7 @@ public class LoginBean implements Serializable {
 	
 	public String logout() {
 		logged.logout();
-		return WebPage.LOGIN.toString();
+		return AppPage.LOGIN.toString();
 	}
 	
 	
@@ -45,7 +45,7 @@ public class LoginBean implements Serializable {
 		if(dao.existe(user)) {
 			message = "";
 			logged.setUser(user);
-			return WebPage.PRODUTO.toString();
+			return AppPage.PRODUTOS.toString();
 		}
 		message = "Credenciais Inválidas!";
 		return null;

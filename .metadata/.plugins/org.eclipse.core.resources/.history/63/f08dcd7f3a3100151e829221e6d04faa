@@ -1,0 +1,38 @@
+package br.com.caelum.notasfiscais.listener;
+
+import javax.faces.context.FacesContext;
+import javax.faces.event.PhaseEvent;
+import javax.faces.event.PhaseId;
+import javax.faces.event.PhaseListener;
+import javax.inject.Inject;
+
+import br.com.caelum.notasfiscais.bean.UsuarioLogado;
+
+public class LoginListener implements PhaseListener {
+
+	private static final long serialVersionUID = -4127548010174187980L;
+	
+	private static final String VIEW_ID_LOGIN = "/login.xhtml";
+	
+	@Inject private UsuarioLogado logged;
+
+	public void beforePhase(PhaseEvent ev) {
+		//System.out.println("** Depois da fase: "+ ev.getPhaseId());
+	}
+	
+	public void afterPhase(PhaseEvent ev) {
+		System.out.println("** Antes da fase: "+ ev.getPhaseId());
+		FacesContext cxt = ev.getFacesContext();
+		if(VIEW_ID_LOGIN.equals(cxt.getViewRoot().getViewId())) {
+			return;
+		}
+		if(!logged.isLogged()) {
+			
+		}
+	}
+	
+	public PhaseId getPhaseId() {
+		return PhaseId.RESTORE_VIEW;
+	}
+	
+}

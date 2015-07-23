@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<ui:composition template="root.xhtml">
+
+<ui:define name="title">Home</ui:define>
+
+<ui:define name="content">
+
+	<h2>Bem Vindo à Uberdist!</h2>
+	Por favor efetue <h:link value="login" outcome="login.xhtml"/>
+	
+</ui:define>
+</ui:composition>
+</html>
