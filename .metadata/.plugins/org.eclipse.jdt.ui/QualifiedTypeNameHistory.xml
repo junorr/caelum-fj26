@@ -3,10 +3,13 @@
 <fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
-<fullyQualifiedTypeName name="javax.enterprise.inject.Produces"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.SessionScoped"/>
 <fullyQualifiedTypeName name="br.com.caelum.notasfiscais.bean.WebPage"/>
 <fullyQualifiedTypeName name="javax.enterprise.context.RequestScoped"/>
 <fullyQualifiedTypeName name="br.com.caelum.notasfiscais.modelo.Item"/>
+<fullyQualifiedTypeName name="javax.enterprise.event.Event"/>
+<fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
+<fullyQualifiedTypeName name="java.lang.annotation.ElementType"/>
 <fullyQualifiedTypeName name="javax.faces.view.ViewScoped"/>
+<fullyQualifiedTypeName name="javax.enterprise.inject.Produces"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,27 @@
+package br.com.caelum.notasfiscais.dao;
+
+import java.io.Serializable;
+
+import javax.inject.Inject;
+import javax.interceptor.AroundInvoke;
+import javax.interceptor.Interceptor;
+import javax.interceptor.InvocationContext;
+import javax.persistence.EntityManager;
+
+@Interceptor
+@Transacao
+public class TransacaoInterceptor implements Serializable {
+
+	private static final long serialVersionUID = -5079694807187833812L;
+	
+	@Inject private transient EntityManager manager;
+	
+	@AroundInvoke
+	public Object intercepta(InvocationContext ctx) throws Exception {
+		manager.getTransaction().begin();
+		Object obj = ctx.proceed();
+		manager.getTransaction().commit();
+		return obj;
+	}
+	
+}

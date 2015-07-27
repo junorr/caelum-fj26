@@ -1,0 +1,13 @@
+package br.com.caelum.notasfiscais.modelo;
+
+import javax.enterprise.inject.Produces;
+
+public class EmailFactory {
+
+	@Produces
+	private static final String emailComercial = "comercial@uberdist.com.br";
+
+	@Produces
+	private static final String emailFinanceiro = "financeiro@uberdist.com.br";
+	
+}

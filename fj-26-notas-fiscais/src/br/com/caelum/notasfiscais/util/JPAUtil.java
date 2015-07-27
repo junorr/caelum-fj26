@@ -15,14 +15,14 @@ public class JPAUtil {
 	@RequestScoped
 	public EntityManager getEntityManager() {
 		EntityManager manager = emf.createEntityManager();
-		manager.getTransaction().begin();
+		//manager.getTransaction().begin();
 		return manager;
 	}
 	
 	
 	public void close(@Disposes EntityManager manager) {
 		if(manager != null) {
-			manager.getTransaction().commit();
+			//manager.getTransaction().commit();
 			manager.close();
 		}
 	}

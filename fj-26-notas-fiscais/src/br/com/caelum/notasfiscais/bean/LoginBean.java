@@ -3,6 +3,7 @@ package br.com.caelum.notasfiscais.bean;
 import java.io.Serializable;
 
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.event.Event;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -19,6 +20,8 @@ public class LoginBean implements Serializable {
 	@Inject private UsuarioLogado logged;
 	
 	@Inject private UsuarioDao dao;
+	
+	@Inject private Event<Usuario> loginEvent;
 	
 	private Usuario user = new Usuario();
 	
@@ -45,7 +48,8 @@ public class LoginBean implements Serializable {
 		if(dao.existe(user)) {
 			message = "";
 			logged.setUser(user);
-			return AppPage.PRODUTOS.toString();
+			loginEvent.fire(user);
+			return AppPage.INDEX.toString();
 		}
 		message = "Credenciais Inválidas!";
 		return null;

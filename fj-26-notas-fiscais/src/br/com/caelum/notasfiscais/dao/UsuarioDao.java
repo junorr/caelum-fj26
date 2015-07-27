@@ -29,16 +29,19 @@ public class UsuarioDao implements Serializable {
 	}
 
 
+	@Transacao
 	public void adiciona(Usuario usr) {
 		manager.persist(usr);
 	}
 
 
+	@Transacao
 	public void remove(Usuario usr) {
 		manager.remove(manager.merge(usr));
 	}
 
 	
+	@Transacao
 	public void atualiza(Usuario usr) {
 		manager.merge(usr);
 	}

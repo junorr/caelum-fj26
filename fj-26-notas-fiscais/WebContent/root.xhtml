@@ -15,16 +15,19 @@
 		<div style="font-weight: bold; 
 						color: white; 
 						position: absolute; 
-						margin-left: 10%; 
+						margin-left: 5%; 
 						display: #{logged.isLogged() ? 'inline' : 'none'};
 						margin-top: 22px;">
 
 			<h:form id="form-logout">
-			<h:panelGrid columns="9">						
+			<h:panelGrid columns="11">
 				<h:link id="lnk-home" value="Home" outcome="index.xhtml" style="color: white;"/>
 				&#160;&#160;&#160;&#160;&#160;&#160;
 			
 				<h:link id="lnk-prod" value="Produtos" outcome="produtos.xhtml" style="color: white;"/>
+				&#160;&#160;&#160;&#160;&#160;&#160;
+			
+				<h:link id="lnk-notas" value="Notas Fiscais" outcome="notas.xhtml" style="color: white;"/>
 				&#160;&#160;&#160;&#160;&#160;&#160;
 			
 				<h:link id="lnk-usr" value="Usuários" outcome="usuarios.xhtml" style="color: white;"/>

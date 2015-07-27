@@ -1,16 +1,22 @@
 package br.com.caelum.notasfiscais.bean;
 
-import javax.faces.view.ViewScoped;
+import java.io.Serializable;
+
 import javax.inject.Inject;
 import javax.inject.Named;
 
 import br.com.caelum.notasfiscais.dao.NotaFiscalDao;
+import br.com.caelum.notasfiscais.dao.ProdutoDao;
 import br.com.caelum.notasfiscais.modelo.Item;
 import br.com.caelum.notasfiscais.modelo.NotaFiscal;
+import br.com.caelum.notasfiscais.modelo.Produto;
+import br.com.caelum.notasfiscais.modelo.ViewModel;
 
 @Named("nf")
-@ViewScoped
-public class NotaBean {
+@ViewModel
+public class NotaBean implements Serializable {
+
+	private static final long serialVersionUID = -8384996687924076506L;
 
 	public static final String
 			MSG_OK = "%s %s com Sucesso",
@@ -18,17 +24,25 @@ public class NotaBean {
 
 	private Item item;
 	
+	private Long idProduto;
+	
 	private NotaFiscal nota;
 	
 	private String message;
 	
-	@Inject private NotaFiscalDao dao;
+	private boolean editItem;
+	
+	@Inject private transient ProdutoDao pdao;
+	
+	@Inject private transient NotaFiscalDao dao;
 	
 	
 	public NotaBean() {
 		item = new Item();
 		nota = new NotaFiscal();
 		message = "";
+		editItem = false;
+		idProduto = null;
 	}
 	
 	
@@ -42,24 +56,85 @@ public class NotaBean {
 	}
 	
 	
+	public Long getIdProduto() {
+		return idProduto;
+	}
+	
+	
+	public void setIdProduto(Long id) {
+		idProduto = id;
+	}
+	
+	
 	public NotaFiscal getNota() {
 		return nota;
 	}
 	
 	
+	public boolean isEditItem() {
+		return editItem;
+	}
+	
+	
+	public void edit(Item it) {
+		if(it == null) return;
+		item = it;
+		idProduto = item.getProduto().getId();
+		editItem = true;
+	}
+	
+	
+	public void clearItem() {
+		item = new Item();
+		editItem = false;
+		message = "";
+	}
+	
+	
+	public void remove(Item it) {
+		if(it == null) return;
+		nota.getItens().remove(it);
+		message = "Item Removido com Sucesso!";
+	}
+	
+	
 	public void appendItem() {
-		nota.getItens().add(item);
+		if(idProduto == null) {
+			return;
+		}
+		Produto p = pdao.buscaPorId(idProduto);
+		if(p == null) {
+			return;
+		}
+		item.setProduto(p);
 		item.setNotaFiscal(nota);
 		item.setValorUnitario(item.getProduto().getPreco());
+		if(!editItem) {
+			nota.getItens().add(item);
+		}
 		item = new Item();
+		idProduto = null;
+		editItem = false;
 		message = "Item Adicionado com Sucesso!";
 	}
 	
 	
-	public void clear() {
+	public void gravarNota() {
+		dao.adiciona(nota);
+		message = "Nota Fiscal Gravada com Sucesso!";
 		nota = new NotaFiscal();
 		item = new Item();
-		message = "";
+		editItem = false;
+		idProduto = null;
+	}
+	
+	
+	public void clear() {
+		message = " ";
+		nota = new NotaFiscal();
+		item = new Item();
+		editItem = false;
+		idProduto = null;
 	}
 	
 }

@@ -2,7 +2,7 @@ package br.com.caelum.notasfiscais.bean;
 
 public enum AppPage {
 	
-	LOGIN, PRODUTOS, USUARIOS;
+	LOGIN, PRODUTOS, USUARIOS, INDEX;
 	
 	private static final String redirect = "?faces-redirect=true";
 	

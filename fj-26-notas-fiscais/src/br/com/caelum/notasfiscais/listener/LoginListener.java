@@ -1,5 +1,6 @@
 package br.com.caelum.notasfiscais.listener;
 
+import javax.enterprise.event.Observes;
 import javax.faces.application.NavigationHandler;
 import javax.faces.context.FacesContext;
 import javax.faces.event.PhaseEvent;
@@ -7,8 +8,10 @@ import javax.faces.event.PhaseId;
 import javax.faces.event.PhaseListener;
 import javax.inject.Inject;
 
-import br.com.caelum.notasfiscais.bean.UsuarioLogado;
 import br.com.caelum.notasfiscais.bean.AppPage;
+import br.com.caelum.notasfiscais.bean.UsuarioLogado;
+import br.com.caelum.notasfiscais.modelo.EmailComercial;
+import br.com.caelum.notasfiscais.modelo.Usuario;
 
 public class LoginListener implements PhaseListener {
 
@@ -18,7 +21,17 @@ public class LoginListener implements PhaseListener {
 	
 	private static final String VIEW_ID_INDEX = "/index.xhtml";
 	
+	@Inject @EmailComercial
+	private String email;
+	
 	@Inject private UsuarioLogado logged;
+	
+	
+	public void usuarioLogado(@Observes Usuario u) {
+		System.out.println("*** USUARIO LOGADO: "+ u+ " ***");
+		System.out.println("*** EMAIL COMERCIAL: "+ email+ " ***");
+	}
+	
 
 	public void beforePhase(PhaseEvent ev) {
 		//System.out.println("** Depois da fase: "+ ev.getPhaseId());

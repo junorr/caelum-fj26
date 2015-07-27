@@ -1,0 +1,23 @@
+package br.com.caelum.notasfiscais.dao;
+
+import javax.inject.Inject;
+import javax.interceptor.AroundInvoke;
+import javax.interceptor.Interceptor;
+import javax.interceptor.InvocationContext;
+import javax.persistence.EntityManager;
+
+@Interceptor
+@Transacao
+public class TransacaoInterceptor {
+
+	@Inject private EntityManager manager;
+	
+	@AroundInvoke
+	public Object intercepta(InvocationContext ctx) throws Exception {
+		manager.getTransaction().begin();
+		Object obj = ctx.proceed();
+		manager.getTransaction().commit();
+		return obj;
+	}
+	
+}

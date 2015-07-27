@@ -1,0 +1,99 @@
+package br.com.caelum.notasfiscais.bean;
+
+import java.io.Serializable;
+
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.caelum.notasfiscais.dao.NotaFiscalDao;
+import br.com.caelum.notasfiscais.dao.ProdutoDao;
+import br.com.caelum.notasfiscais.modelo.Item;
+import br.com.caelum.notasfiscais.modelo.NotaFiscal;
+import br.com.caelum.notasfiscais.modelo.Produto;
+
+@Named("nf")
+@ViewScoped
+public class NotaBean implements Serializable {
+
+	public static final String
+			MSG_OK = "%s %s com Sucesso",
+			MSG_ERROR = "Erro ao %s";
+
+	private Item item;
+	
+	private Long idProduto;
+	
+	private NotaFiscal nota;
+	
+	private String message;
+	
+	private boolean editItem;
+	
+	@Inject private transient ProdutoDao pdao;
+	
+	@Inject private transient NotaFiscalDao dao;
+	
+	
+	public NotaBean() {
+		item = new Item();
+		nota = new NotaFiscal();
+		message = "";
+		editItem = false;
+		idProduto = null;
+	}
+	
+	
+	public String getMessage() {
+		return message;
+	}
+	
+	
+	public Item getItem() {
+		return item;
+	}
+	
+	
+	public Long getIdProduto() {
+		return idProduto;
+	}
+	
+	
+	public void setIdProduto(Long id) {
+		idProduto = id;
+	}
+	
+	
+	public NotaFiscal getNota() {
+		return nota;
+	}
+	
+	
+	public void appendItem() {
+		if(idProduto == null) {
+			System.out.println("# ID produto == null");
+			return;
+		}
+		Produto p = pdao.buscaPorId(idProduto);
+		if(p == null) {
+			System.out.println("# Produto não encontrado");
+			return;
+		}
+		item.setProduto(p);
+		nota.getItens().add(item);
+		item.setNotaFiscal(nota);
+		item.setValorUnitario(item.getProduto().getPreco());
+		System.out.println("* Item Adicionado: "+ item);
+		item = new Item();
+		idProduto = null;
+		message = "Item Adicionado com Sucesso!";
+	}
+	
+	
+	public void clear() {
+		nota = new NotaFiscal();
+		item = new Item();
+		message = "";
+	}
+	
+}

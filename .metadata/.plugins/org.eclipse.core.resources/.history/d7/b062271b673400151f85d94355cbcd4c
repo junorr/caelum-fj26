@@ -1,0 +1,6 @@
+package br.com.caelum.notasfiscais.dao;
+
+@Transacao
+public class TransacaoInterceptor {
+
+}

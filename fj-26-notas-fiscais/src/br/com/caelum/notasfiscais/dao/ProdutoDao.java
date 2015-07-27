@@ -9,6 +9,7 @@ import javax.persistence.criteria.CriteriaQuery;
 
 import br.com.caelum.notasfiscais.modelo.Produto;
 
+
 public class ProdutoDao implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -16,16 +17,19 @@ public class ProdutoDao implements Serializable{
 	@Inject private transient EntityManager manager;
 	
 	
+	@Transacao
 	public void adiciona(Produto produto) {
 		manager.persist(produto);
 	}
 
 
+	@Transacao
 	public void remove(Produto produto) {
 		manager.remove(manager.merge(produto));
 	}
 
 	
+	@Transacao
 	public void atualiza(Produto produto) {
 		manager.merge(produto);
 	}

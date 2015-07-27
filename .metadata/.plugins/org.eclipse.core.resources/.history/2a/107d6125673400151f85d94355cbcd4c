@@ -1,0 +1,12 @@
+package br.com.caelum.notasfiscais.dao;
+
+import javax.interceptor.InvocationContext;
+
+@Transacao
+public class TransacaoInterceptor {
+
+	public Object intercepta(InvocationContext ctx) {
+		return null;
+	}
+	
+}

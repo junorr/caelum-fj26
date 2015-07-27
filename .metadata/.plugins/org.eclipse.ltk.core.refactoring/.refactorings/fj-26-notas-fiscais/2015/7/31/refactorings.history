@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EmailComercial.java&apos; to &apos;fj-26-notas-fiscais/src/br.com.caelum.notasfiscais.modelo&apos;&#x0A;- Original project: &apos;fj-26-notas-fiscais&apos;&#x0A;- Destination element: &apos;fj-26-notas-fiscais/src/br.com.caelum.notasfiscais.modelo&apos;&#x0A;- Original element: &apos;br.com.caelum.notasfiscais.modelo.EmailComercial.java&apos;" description="Copy compilation unit" destination="/src&lt;br.com.caelum.notasfiscais.modelo" element1="/src&lt;br.com.caelum.notasfiscais.modelo{EmailComercial.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1438011141445" units="1" version="1.0"/>
+</session>
