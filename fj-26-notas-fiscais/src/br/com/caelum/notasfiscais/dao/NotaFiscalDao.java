@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaQuery;
 
 import br.com.caelum.notasfiscais.modelo.NotaFiscal;
+import br.com.caelum.notasfiscais.modelo.Produto;
 
 public class NotaFiscalDao implements Serializable {
 	
@@ -19,6 +20,18 @@ public class NotaFiscalDao implements Serializable {
 	@Transacao
 	public void adiciona(NotaFiscal nota) {
 		manager.persist(nota);
+	}
+
+	
+	@Transacao
+	public void remove(NotaFiscal nf) {
+		manager.remove(manager.merge(nf));
+	}
+	
+	
+	@Transacao
+	public void atualiza(NotaFiscal nf) {
+		manager.merge(nf);
 	}
 
 	

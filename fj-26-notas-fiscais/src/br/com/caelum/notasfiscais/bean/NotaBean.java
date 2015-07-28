@@ -30,11 +30,13 @@ public class NotaBean implements Serializable {
 	
 	private String message;
 	
-	private boolean editItem;
+	private boolean editItem, editNota;
 	
 	@Inject private transient ProdutoDao pdao;
 	
 	@Inject private transient NotaFiscalDao dao;
+	
+	@Inject private DataModelNotas notas;
 	
 	
 	public NotaBean() {
@@ -42,6 +44,7 @@ public class NotaBean implements Serializable {
 		nota = new NotaFiscal();
 		message = "";
 		editItem = false;
+		editNota = false;
 		idProduto = null;
 	}
 	
@@ -71,6 +74,11 @@ public class NotaBean implements Serializable {
 	}
 	
 	
+	public DataModelNotas getDataModel() {
+		return notas;
+	}
+	
+	
 	public boolean isEditItem() {
 		return editItem;
 	}
@@ -84,10 +92,24 @@ public class NotaBean implements Serializable {
 	}
 	
 	
+	public void edit(NotaFiscal nf) {
+		if(nf == null) return;
+		nota = nf;
+		editNota = true;
+	}
+	
+	
 	public void clearItem() {
 		item = new Item();
 		editItem = false;
 		message = "";
+	}
+	
+	
+	public void remove(NotaFiscal nf) {
+		if(nf == null) return;
+		dao.remove(nf);
+		message = "Nota Fiscal Removida com Sucesso!";
 	}
 	
 	
@@ -120,11 +142,17 @@ public class NotaBean implements Serializable {
 	
 	
 	public void gravarNota() {
-		dao.adiciona(nota);
+		if(editNota) {
+			dao.atualiza(nota);
+		}
+		else {
+			dao.adiciona(nota);
+		}
 		message = "Nota Fiscal Gravada com Sucesso!";
 		nota = new NotaFiscal();
 		item = new Item();
 		editItem = false;
+		editNota = false;
 		idProduto = null;
 	}
 	

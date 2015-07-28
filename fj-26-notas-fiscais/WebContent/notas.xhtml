@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core">
 	
 <ui:composition template="root.xhtml">
@@ -13,29 +14,25 @@
 	<h:form id="form-nota">
 	<h:panelGrid columns="2">
 		<h:outputLabel value="CNPJ:" for="icnpj"/>
-		<h:inputText id="icnpj" value="#{nf.nota.cnpj}"
-				style="width: 230px;"/>
+		<p:inputMask mask="99.999.999/9999-99" value="#{nf.nota.cnpj}"/>
 
-		<h:outputLabel value="Data:" for="idata"/>		
-		<h:inputText id="idata" value="#{nf.nota.data.time}"
-				style="width: 230px;">
-			<f:convertDateTime pattern="dd/MM/yyyy"/>
-		</h:inputText>
+		<h:outputLabel value="Data:" for="idata"/>
+		<p:calendar pattern="dd/MM/yyyy" value="#{nf.nota.data.time}"/>
 		
 		<h:inputHidden id="hidden-id" value="#{nf.nota.id}"/>
 		
 		<h:panelGroup>
-			<h:commandButton value="Gravar Nota" action="#{nf.gravarNota()}"
-					style="position: relative; margin-left: 0px;">
-				<f:ajax render=":form-nota :form-list :form-msg" 
-						execute=":form-nota"/>
-			</h:commandButton>
+			<p:commandButton value="Gravar Nota" action="#{nf.gravarNota()}"
+					icon="fa fa-save"
+					process=":form-nota"
+					update=":form-nota :form-list :form-msg"/>
 			
-			<h:commandButton value="Cancelar" action="#{nf.clear()}"
-					style="position: relative; left: -30px; top: -30px; 
-					display: #{nf.nota.itens.isEmpty() ? 'none' : 'inline'};">
-				<f:ajax render=":form-nota :form-prod :form-list :form-msg" execute=":form-nota"/>
-			</h:commandButton>&#160;&#160;
+			<p:commandButton value="Cancelar" action="#{nf.clear()}"
+					icon="fa fa-ban"
+					style="display: #{nf.nota.itens.isEmpty() ? 'none': 'inline'};"
+					process=":form-nota"
+					update=":form-nota :form-prod :form-list :form-msg"/>
+			&#160;&#160;
 		</h:panelGroup>
 	</h:panelGrid>
 	</h:form>
@@ -46,29 +43,31 @@
 	<h:form id="form-prod">
 	<h:panelGrid columns="2">
 		<h:outputLabel value="Produto:" for="iprod"/>
-		<h:selectOneMenu id="iprod" value="#{nf.idProduto}"
-				style="width: 230px;">
-			<f:selectItems value="#{produtoBean.produtos}" var="p" 
-					itemLabel="#{p.nome}" itemValue="#{p.id}"/>
-		</h:selectOneMenu>
+		<p:selectOneMenu id="iprod" value="#{nf.idProduto}" style="width: 130px;">
+			<f:selectItem itemLabel="Selecione" itemValue=""/>
+			<f:selectItems value="#{produtoBean.produtos}" var="prod" 
+					itemLabel="#{prod.nome}" itemValue="#{prod.id}"/>
+		</p:selectOneMenu>
 
 		<h:outputLabel value="Quantidade:" for="iqtd"/>		
-		<h:inputText id="iqtd" value="#{nf.item.quantidade}"
-				style="width: 230px;"/>
+		<p:inputText id="iqtd" value="#{nf.item.quantidade}"
+				style="width: 100px;"/>
 		
 		<h:inputHidden id="hidden-id" value="#{nf.item.id}"/>
 		
 		<h:panelGroup>
-			<h:commandButton value="Adicionar Item" action="#{nf.appendItem()}"
-					style="position: relative; margin-left: 0px;">
-				<f:ajax execute=":form-prod :form-list" render=":form-nota :form-prod :form-list :form-msg"/>
-			</h:commandButton>&#160;&#160;
+			<p:commandButton value="Adicionar Item" action="#{nf.appendItem()}"
+					icon="fa fa-plus"
+					process=":form-prod :form-list" 
+					update=":form-nota :form-prod :form-list :form-msg"/>
+			&#160;&#160;
 			
-			<h:commandButton value="Cancelar" action="#{nf.clearItem()}"
-					style="position: relative; left: -30px; top: -30px; 
-					display: #{nf.editItem ? 'inline' : 'none'};">
-				<f:ajax render=":form-prod :form-list" execute=":form-prod :form-list"/>
-			</h:commandButton>&#160;&#160;
+			<p:commandButton value="Cancelar" action="#{nf.clearItem()}"
+					style="display: #{nf.editItem ? 'inline' : 'none'};"
+					icon="fa fa-ban"
+					process=":form-prod :form-list"
+					update=":form-prod :form-list"/>
+			&#160;&#160;
 		</h:panelGroup>
 	</h:panelGrid>
 	</h:form>
@@ -81,40 +80,38 @@
 
 	<h3>Itens Nota Fiscal</h3>
 	<h:form id="form-list">
-	<h:dataTable id="item-list" value="#{nf.nota.itens}" var="it"
-			styleClass="dados" rowClasses="impar,par">
-		<h:column>
-			<f:facet name="header">Produto</f:facet>
+	<p:dataTable id="item-list" value="#{nf.nota.itens}" var="it"
+			paginator="true" rows="5">
+		<p:column headerText="Produto">
 			#{it.produto.nome}
-		</h:column>
-		<h:column>
-			<f:facet name="header">Preço Unitário</f:facet>
+		</p:column>
+		<p:column headerText="Preço Unitário">
 			<h:outputText value="#{it.valorUnitario}">
 				<f:convertNumber pattern="R$ #0.00"/>
 			</h:outputText>
-		</h:column>
-		<h:column>
-			<f:facet name="header">Quantidade</f:facet>
+		</p:column>
+		<p:column headerText="Quantidade">
 			#{it.quantidade}
-		</h:column>
-		<h:column>
-			<f:facet name="header">Valor Total</f:facet>
+		</p:column>
+		<p:column headerText="Valor Total">
 			<h:outputText value="#{it.total}">
 				<f:convertNumber pattern="R$ #0.00"/>
 			</h:outputText>
-		</h:column>
+		</p:column>
 
-		<h:column>
-			<f:facet name="header">Remover/Editar</f:facet>
-			<h:commandLink action="#{nf.remove(it)}" value="[X]">
-				<f:ajax render=":form-list :form-msg" execute=":form-list"/>
-			</h:commandLink>&#160;&#160; 
-			<h:commandLink value="[-]" action="#{nf.edit(it)}">
-				<f:ajax render=":form-prod" execute=":form-list"/>
-			</h:commandLink>
-		</h:column>
+		<p:column headerText="Remover/Editar">
+			<p:commandLink actionListener="#{nf.remove(it)}"
+					process=":form-list" update=":form-list :form-msg">
+				<i class="fa fa-remove"></i>
+			</p:commandLink>
+			&#160;&#160; 
+			<p:commandLink actionListener="#{nf.edit(it)}"
+					process=":form-list" update=":form-prod">
+				<i class="fa fa-edit"></i>
+			</p:commandLink>
+		</p:column>
 
-	</h:dataTable>
+	</p:dataTable>
 	</h:form>
 	
 </ui:define>

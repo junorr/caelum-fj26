@@ -60,5 +60,16 @@ public class NotaFiscal implements Serializable {
 	public void setItens(List<Item> itens) {
 		this.itens = itens;
 	}
+	
+	
+	public double getValorTotal() {
+		if(itens == null || itens.isEmpty())
+			return 0;
+		double vt = 0;
+		for(Item i : itens) {
+			vt += i.getTotal();
+		}
+		return vt;
+	}
 
 }
