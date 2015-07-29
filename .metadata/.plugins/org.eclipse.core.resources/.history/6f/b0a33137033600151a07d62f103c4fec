@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<ui:composition template="root.xhtml">
+
+<ui:define name="title">Produtos</ui:define>
+
+<ui:define name="content">
+	<p:fieldset legend="Dados do Produto">
+	<h:form id="form-vals">
+	<p:messages autoUpdate="true"/>
+	<h:panelGrid columns="2">
+		<h:outputLabel value="Nome:" for="nome"/>
+		<h:inputText id="nome" value="#{produtoBean.produto.nome}"
+				validator="#{produtoBean.comecaComMaiuscula}"
+				style="width: 230px;"/>
+
+		<h:outputLabel value="Descrição:" for="descricao"/>		
+		<h:inputTextarea id="descricao" value="#{produtoBean.produto.descricao}"
+				style="width: 230px; height: 80px;"/>
+		
+		<h:outputLabel value="Preço:" for="preco"/>
+		<h:inputText id="preco" value="#{produtoBean.produto.preco}"
+				style="width: 230px;"/>
+
+		<h:inputHidden id="hidden-id" value="#{produtoBean.produto.id}"/>
+		
+		<h:panelGroup>
+			<h:commandButton value="Gravar" action="#{produtoBean.gravar()}"
+					style="position: relative; margin-left: 0px;">
+				<f:ajax execute=":form-vals :form-list" render=":form-vals :form-list"/>
+			</h:commandButton>&#160;&#160;
+			
+			<h:commandButton value="Cancelar" action="#{produtoBean.clear()}"
+					style="position: relative; left: -60px; top: -30px; display: #{produtoBean.produto.id != null ? 'inline' : 'none'};">
+				<f:ajax render=":form-vals :form-list" execute=":form-vals :form-list"/>
+			</h:commandButton>&#160;&#160;
+			<h:outputText id="outmsg" value="#{produtoBean.message}"/>
+		</h:panelGroup>
+	</h:panelGrid>
+	</h:form>
+	</p:fieldset>
+	
+	<br/>
+	<h3>Lista de Produtos</h3>
+	<h:form id="form-list">
+	<h:dataTable id="product-list" value="#{produtoBean.produtos}" var="pd"
+			styleClass="dados" rowClasses="impar,par">
+		<h:column>
+			<f:facet name="header">Nome</f:facet>
+			#{pd.nome}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Descrição</f:facet>
+			#{pd.descricao}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Preço</f:facet>
+			#{pd.preco}
+		</h:column>
+		<h:column>
+			<f:facet name="header">Remover/Editar</f:facet>
+			<h:commandLink action="#{produtoBean.remove(pd)}" value="[X]">
+				<f:ajax render=":form-vals :form-list" execute=":form-vals :form-list"/>
+			</h:commandLink>&#160;&#160; 
+			<h:commandLink value="[-]">
+				<f:setPropertyActionListener value="#{pd}" target="#{produtoBean.produto}"/>
+				<f:setPropertyActionListener value="#{''}" target="#{produtoBean.message}"/>
+				<f:ajax render=":form-vals :form-list" execute=":form-vals :form-list"/>
+			</h:commandLink>
+		</h:column>
+	</h:dataTable>
+	</h:form>
+</ui:define>
+</ui:composition>
+</html>

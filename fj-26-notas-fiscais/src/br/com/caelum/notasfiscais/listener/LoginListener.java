@@ -34,7 +34,7 @@ public class LoginListener implements PhaseListener {
 	
 
 	public void beforePhase(PhaseEvent ev) {
-		//System.out.println("** Depois da fase: "+ ev.getPhaseId());
+		System.out.println("** Depois da fase: "+ ev.getPhaseId());
 	}
 	
 	public void afterPhase(PhaseEvent ev) {

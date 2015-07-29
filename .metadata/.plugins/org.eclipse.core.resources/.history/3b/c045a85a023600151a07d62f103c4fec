@@ -1,0 +1,22 @@
+package br.com.caelum.notasfiscais.util;
+
+import javax.enterprise.context.ApplicationScoped;
+import javax.enterprise.inject.Produces;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
+
+public class JSFUtil {
+	
+	@Produces @ApplicationScoped 
+	private FacesContext context = FacesContext.getCurrentInstance();
+	
+	
+	public void addMessage(String message) {
+		context.addMessage(null, new FacesMessage(message));
+	}
+
+	public void addMessage(FacesMessage.Severity svr, String message) {
+		context.addMessage(null, new FacesMessage(svr, message, null));
+	}
+
+}

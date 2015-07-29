@@ -32,6 +32,8 @@ public class NotaBean implements Serializable {
 	
 	private boolean editItem, editNota;
 	
+	private int indexItem;
+	
 	@Inject private transient ProdutoDao pdao;
 	
 	@Inject private transient NotaFiscalDao dao;
@@ -45,6 +47,7 @@ public class NotaBean implements Serializable {
 		message = "";
 		editItem = false;
 		editNota = false;
+		indexItem = -1;
 		idProduto = null;
 	}
 	
@@ -84,15 +87,16 @@ public class NotaBean implements Serializable {
 	}
 	
 	
-	public void edit(Item it) {
+	public void editItem(Item it) {
 		if(it == null) return;
 		item = it;
+		indexItem = nota.getItens().indexOf(it);
 		idProduto = item.getProduto().getId();
 		editItem = true;
 	}
 	
 	
-	public void edit(NotaFiscal nf) {
+	public void editNota(NotaFiscal nf) {
 		if(nf == null) return;
 		nota = nf;
 		editNota = true;
@@ -106,14 +110,14 @@ public class NotaBean implements Serializable {
 	}
 	
 	
-	public void remove(NotaFiscal nf) {
+	public void removeNota(NotaFiscal nf) {
 		if(nf == null) return;
 		dao.remove(nf);
 		message = "Nota Fiscal Removida com Sucesso!";
 	}
 	
 	
-	public void remove(Item it) {
+	public void removeItem(Item it) {
 		if(it == null) return;
 		nota.getItens().remove(it);
 		message = "Item Removido com Sucesso!";
@@ -128,12 +132,14 @@ public class NotaBean implements Serializable {
 		if(p == null) {
 			return;
 		}
+		if(editItem) {
+			nota.getItens().remove(indexItem);
+			item.setId(null);
+		}
 		item.setProduto(p);
 		item.setNotaFiscal(nota);
 		item.setValorUnitario(item.getProduto().getPreco());
-		if(!editItem) {
-			nota.getItens().add(item);
-		}
+		nota.getItens().add(item);
 		item = new Item();
 		idProduto = null;
 		editItem = false;
@@ -152,6 +158,7 @@ public class NotaBean implements Serializable {
 		nota = new NotaFiscal();
 		item = new Item();
 		editItem = false;
+		indexItem = -1;
 		editNota = false;
 		idProduto = null;
 	}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<ui:composition template="root.xhtml">
+
+<ui:define name="title">Notas Fiscais</ui:define>
+
+<ui:define name="content">
+
+	<br/>
+	<h3>Notas Fiscais</h3>
+	
+	<h:form id="form-notas">
+		<p:messages autoUpdate="true"/>
+		<p:dataTable value="#{nf.dataModel}" var="nota"
+				paginator="true" rows="10" lazy="true">
+			<p:column headerText="CNPJ">
+				#{nota.cnpj}
+			</p:column>
+			
+			<p:column headerText="Data">
+				#{nota.cnpj}
+			</p:column>
+			
+			<p:column headerText="Qtd. Itens">
+				#{nota.itens.size()}
+			</p:column>
+			
+			<p:column headerText="Valor Total">
+				<h:outputText value="#{nota.valorTotal}">
+					<f:convertNumber pattern="R$ #0.00"/>
+				</h:outputText>
+			</p:column>
+			
+			<p:column headerText="Remover/Editar">
+				<p:commandLink actionListener="#{nf.remove(nota)}"
+						process=":form-notas" update=":form-notas">
+					<i class="fa fa-remove"></i>
+				</p:commandLink>
+				&#160;&#160; 
+				<p:commandLink actionListener="#{nf.edit(nota)}"
+						oncomplete="PF('wdlg_nota').show()"
+						process=":form-notas" update=":form-dlg-nota">
+					<i class="fa fa-edit"></i>
+				</p:commandLink>
+			</p:column>
+		</p:dataTable>
+		
+		<br/>
+		<p:commandButton type="button" value="Nova Nota Fiscal"
+				style="position: relative; margin-left: 44%;" 
+				icon="fa fa-plus" onclick="PF('wdlg_nota').show()"/>
+	</h:form>	
+		
+		
+	<p:dialog id="dlg-nota" widgetVar="wdlg_nota" appendTo="@(body)"
+			showEffect="drop" hideEffect="drop" position="center"
+			width="800" height="400" header="Nota Fiscal: #{nf.nota.id}" 
+			modal="true" visible="false">
+		
+		<h:form id="form-dlg-nota">	
+			<p:messages autoUpdate="true"/>
+			<h4>Dados da Nota Fiscal</h4>
+			<h:panelGrid columns="2">
+				<h:outputLabel value="CNPJ:" for="icnpj"/>
+				<p:inputMask mask="99.999.999/9999-99" value="#{nf.nota.cnpj}"/>
+
+				<h:outputLabel value="Data:" for="idata"/>
+				<p:calendar pattern="dd/MM/yyyy" value="#{nf.nota.data.time}"/>
+		
+				<h:inputHidden id="hidden-id" value="#{nf.nota.id}"/>
+		
+				<h:panelGroup>
+					<p:commandButton value="Gravar Nota" action="#{nf.gravarNota()}"
+							icon="fa fa-save"
+							oncomplete="PF('wdlg_nota').hide()"
+							process=":form-dlg-nota"
+							update=":form-dlg-nota :form-notas"/>
+			
+					<p:commandButton value="Cancelar" action="#{nf.clear()}"
+							icon="fa fa-ban"
+							oncomplete="PF('wdlg_nota').hide()"
+							style="display: #{nf.nota.itens.isEmpty() ? 'none': 'inline'};"
+							process=":form-dlg-nota"
+							update=":form-dlg-nota :form-notas :form-dlg-item"/>
+					&#160;&#160;
+				</h:panelGroup>
+			</h:panelGrid>
+			<br/>
+	
+			<h3>Itens Nota Fiscal</h3>
+			<p:dataTable id="item-list" value="#{nf.nota.itens}" var="it"
+					paginator="true" rows="5">
+				<p:column headerText="Produto">
+					#{it.produto.nome}
+				</p:column>
+				<p:column headerText="Preço Unitário">
+					<h:outputText value="#{it.valorUnitario}">
+						<f:convertNumber pattern="R$ #0.00"/>
+					</h:outputText>
+				</p:column>
+				<p:column headerText="Quantidade">
+					#{it.quantidade}
+				</p:column>
+				<p:column headerText="Valor Total">
+					<h:outputText value="#{it.total}">
+						<f:convertNumber pattern="R$ #0.00"/>
+					</h:outputText>
+				</p:column>
+				<p:column headerText="Remover/Editar">
+					<p:commandLink actionListener="#{nf.removeItem(it)}"
+							process=":form-dlg-nota" update=":form-dlg-nota">
+						<i class="fa fa-remove"></i>
+					</p:commandLink>
+					&#160;&#160; 
+					<p:commandLink actionListener="#{nf.edit(it)}"
+							oncomplete="wdlg_item.show()"
+							process=":form-dlg-nota" update=":form-dlg-item">
+						<i class="fa fa-edit"></i>
+					</p:commandLink>
+				</p:column>
+			</p:dataTable>
+			
+			<p:commandButton value="Novo Item" icon="fa fa-plus" type="button"
+					style="position: relative; margin-left: 44%;" 
+					onclick="PF('wdlg_item').show()"/>
+		</h:form>
+	</p:dialog>
+
+		
+	<p:dialog id="dlg-item" widgetVar="wdlg_item" appendTo="@(body)" 
+			showEffect="drop" hideEffect="drop" position="center"
+			width="350" height="150" header="Item Nota Fiscal" 
+			modal="true" visible="false">
+			
+		<h:form id="form-dlg-item">
+			<h4>Dados do Produto</h4>
+			<h:panelGrid columns="2">
+				<h:outputLabel value="Produto:" for="iprod"/>
+				<p:selectOneMenu id="iprod" value="#{nf.idProduto}" style="width: 130px;">
+					<f:selectItem itemLabel="Selecione" itemValue=""/>
+					<f:selectItems value="#{produtoBean.produtos}" var="prod" 
+							itemLabel="#{prod.nome}" itemValue="#{prod.id}"/>
+				</p:selectOneMenu>
+					<h:outputLabel value="Quantidade:" for="iqtd"/>		
+				<p:inputText id="iqtd" value="#{nf.item.quantidade}"
+						style="width: 100px;"/>
+	
+				<h:inputHidden id="hidden-id" value="#{nf.item.id}"/>
+	
+				<h:panelGroup>
+					<p:commandButton value="Adicionar Item" action="#{nf.appendItem()}"
+							icon="fa fa-plus"
+							oncomplete="PF('wdlg_item').hide()"
+							process=":form-dlg-item" 
+							update=":form-dlg-item :form-dlg-nota"/>
+					&#160;&#160;
+		
+					<p:commandButton value="Cancelar" action="#{nf.clearItem()}"
+							style="display: #{nf.editItem ? 'inline' : 'none'};"
+							icon="fa fa-ban"
+							oncomplete="PF('wdlg_item').hide()"
+							process=":form-dlg-item"
+							update=":form-dlg-item"/>
+				</h:panelGroup>
+			</h:panelGrid>
+		</h:form>
+	</p:dialog>
+	
+</ui:define>
+</ui:composition>
+</html>
