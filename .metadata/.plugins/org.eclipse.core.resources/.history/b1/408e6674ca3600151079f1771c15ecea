@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<h:head>
+	<meta charset="UTF-8"/>
+	<title>SisNF - <ui:insert name="title"/></title>
+	<h:outputStylesheet name="style.css" library="css"/>
+</h:head>
+
+<h:body>
+	<div id="cabecalho">
+		<h:graphicImage name="logo-uber.png" library="imagens"/>
+		<div style="font-weight: bold; 
+						color: white; 
+						position: absolute; 
+						margin-left: 5%; 
+						display: #{logged.isLogged() ? 'inline' : 'none'};
+						margin-top: 22px;">
+
+			<h:form id="form-logout">
+			<h:panelGrid columns="11">
+				<h:link id="lnk-home" value="Home" outcome="index.xhtml" style="color: white;"/>
+				&#160;&#160;&#160;&#160;&#160;&#160;
+			
+				<h:link id="lnk-prod" value="Produtos" outcome="produtos.xhtml" style="color: white;"/>
+				&#160;&#160;&#160;&#160;&#160;&#160;
+			
+				<h:link id="lnk-notas" value="Notas Fiscais" outcome="notas-new.xhtml" style="color: white;"/>
+				&#160;&#160;&#160;&#160;&#160;&#160;
+			
+				<h:link id="lnk-usr" value="Usuários" outcome="usuarios.xhtml" style="color: white;"/>
+				&#160;&#160;&#160;&#160;&#160;&#160;
+				
+				<h:commandLink id="lnk-logout" action="#{login.logout()}" value="Logout" style="color: white;">
+					<f:ajax/>
+				</h:commandLink>
+				&#160;&#160;&#160;&#160;&#160;&#160;
+				
+				<h:outputText id="user-name" value="Bem Vindo&#160; #{logged.user.login}"/>
+			</h:panelGrid>
+			</h:form>
+		</div>
+	</div>
+	
+	<ui:insert name="content"/>
+	
+	<div id="rodape">Copyright 2015. Todos os direitos reservados a Juno. 
+			&#160;&#160;&#160;&#160; <ui:insert name="footer"/>
+		<h:graphicImage id="loading" library="imagens" name="loading9.gif" 
+				width="24" height="24" 
+				style="position: absolute; left: 20px; top: 5px; display: none;"/>
+		<p:ajaxStatus onstart="$('#loading').show()" onsuccess="$('#loading').hide()"/>
+	</div>
+</h:body>
+</html>

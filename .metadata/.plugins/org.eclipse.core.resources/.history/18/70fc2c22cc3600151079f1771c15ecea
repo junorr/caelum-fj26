@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core">
+	
+<ui:composition template="root.xhtml">
+
+<ui:define name="title">Login</ui:define>
+
+<ui:define name="content">
+	<h3>Autenticação</h3>
+	<fieldset><legend>Dados de Usuario</legend>
+	<h:form>
+	<h:panelGrid columns="2">
+		<h:outputLabel value="#{bundle.lbl_login}" for="ilogin"/>
+		<h:inputText id="ilogin" value="#{login.user.login}"/>
+
+		<h:outputLabel value="#{bundle.lbl_senha}" for="isenha"/>		
+		<h:inputSecret id="isenha" value="#{login.user.senha}"/>
+		
+		<h:commandButton value="Login" action="#{login.login()}">
+			<f:ajax render="login-message" execute="@form"/>
+		</h:commandButton> 
+		<h:outputText id="login-message" value="&#160;&#160; #{login.message}"/>
+	</h:panelGrid>
+	</h:form>
+	</fieldset>
+	
+</ui:define>
+</ui:composition>
+</html>

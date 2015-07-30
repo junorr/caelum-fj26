@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core">
 	
 <h:head>
@@ -47,6 +48,11 @@
 	<ui:insert name="content"/>
 	
 	<div id="rodape">Copyright 2015. Todos os direitos reservados a Juno. 
-			&#160;&#160;&#160;&#160; <ui:insert name="footer"/></div>
+			&#160;&#160;&#160;&#160; <ui:insert name="footer"/>
+		<h:graphicImage id="loading" library="imagens" name="loading9.gif" 
+				width="24" height="24" 
+				style="position: absolute; left: 20px; top: 5px; display: none;"/>
+		<p:ajaxStatus onstart="$('#loading').show()" onsuccess="$('#loading').hide()"/>
+	</div>
 </h:body>
 </html>

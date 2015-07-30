@@ -1,0 +1,36 @@
+package br.com.caelum.notasfiscais.converter;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.caelum.notasfiscais.dao.ProdutoDao;
+import br.com.caelum.notasfiscais.modelo.Produto;
+
+//@FacesConverter(forClass=Produto.class)
+@Named("prodconv")
+public class CnpjConverter implements Converter {
+
+	@Inject private ProdutoDao pdao;
+	
+	@Override
+	public Object getAsObject(FacesContext ctx, UIComponent cmp, String value) {
+		try {
+			Long id = Long.parseLong(value);
+			return pdao.buscaPorId(id);
+		} catch(NumberFormatException e) {
+			return  null;
+		}
+	}
+
+	@Override
+	public String getAsString(FacesContext ctx, UIComponent cmp, Object obj) {
+		if(obj == null || !(obj instanceof Produto))
+			return null;
+		Produto p = (Produto) obj;
+		return String.valueOf(p.getId());
+	}
+	
+}

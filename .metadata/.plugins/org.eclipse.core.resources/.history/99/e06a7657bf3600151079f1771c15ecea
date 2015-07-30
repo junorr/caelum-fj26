@@ -1,0 +1,25 @@
+package br.com.caelum.notasfiscais.converter;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
+import javax.inject.Inject;
+
+import br.com.caelum.notasfiscais.dao.ProdutoDao;
+import br.com.caelum.notasfiscais.modelo.Produto;
+
+@FacesConverter("cnpj")
+public class CnpjConverter implements Converter {
+
+	@Override
+	public Object getAsObject(FacesContext ctx, UIComponent cmp, String value) {
+		
+	}
+
+	@Override
+	public String getAsString(FacesContext ctx, UIComponent cmp, Object obj) {
+		
+	}
+	
+}

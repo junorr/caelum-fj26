@@ -9,6 +9,11 @@
 <ui:define name="title">Produtos</ui:define>
 
 <ui:define name="content">
+	<f:metadata>
+		<f:viewParam name="produto.id" value="#{produtoBean.id}"/>
+		<f:viewAction action="#{produtoBean.loadProduto()}"/>
+	</f:metadata>
+
 	<p:fieldset legend="Dados do Produto" style="width: 80%; position: relative; margin-left: 10%">
 	<h:form id="form-vals">
 	<p:messages autoUpdate="true"/>
@@ -24,7 +29,7 @@
 		
 		<h:outputLabel value="Preço:" for="preco"/>
 		<h:inputText id="preco" value="#{produtoBean.produto.preco}"
-				style="width: 230px;"/>
+				style="width: 230px;" immediate="true"/>
 
 		<h:inputHidden id="hidden-id" value="#{produtoBean.produto.id}"/>
 		
@@ -67,12 +72,18 @@
 			<f:facet name="header">Remover/Editar</f:facet>
 			<h:commandLink action="#{produtoBean.remove(pd)}" value="[X]">
 				<f:ajax render=":form-vals :form-list" execute=":form-vals :form-list"/>
-			</h:commandLink>&#160;&#160; 
+			</h:commandLink>&#160;&#160;
+			<h:outputLink value="produtos.xhtml">
+				[-]
+				<f:param name="produto.id" value="#{pd.id}"/>
+			</h:outputLink>
+			<ui:remove> 
 			<h:commandLink value="[-]">
 				<f:setPropertyActionListener value="#{pd}" target="#{produtoBean.produto}"/>
 				<f:setPropertyActionListener value="#{''}" target="#{produtoBean.message}"/>
 				<f:ajax render=":form-vals :form-list" execute=":form-vals :form-list"/>
 			</h:commandLink>
+			</ui:remove>
 		</h:column>
 	</h:dataTable>
 	</h:form>

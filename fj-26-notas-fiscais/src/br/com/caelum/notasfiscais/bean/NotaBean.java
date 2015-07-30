@@ -24,7 +24,7 @@ public class NotaBean implements Serializable {
 
 	private Item item;
 	
-	private Long idProduto;
+	//private Long idProduto;
 	
 	private NotaFiscal nota;
 	
@@ -48,7 +48,6 @@ public class NotaBean implements Serializable {
 		editItem = false;
 		editNota = false;
 		indexItem = -1;
-		idProduto = null;
 	}
 	
 	
@@ -59,16 +58,6 @@ public class NotaBean implements Serializable {
 	
 	public Item getItem() {
 		return item;
-	}
-	
-	
-	public Long getIdProduto() {
-		return idProduto;
-	}
-	
-	
-	public void setIdProduto(Long id) {
-		idProduto = id;
 	}
 	
 	
@@ -91,7 +80,7 @@ public class NotaBean implements Serializable {
 		if(it == null) return;
 		item = it;
 		indexItem = nota.getItens().indexOf(it);
-		idProduto = item.getProduto().getId();
+		//idProduto = item.getProduto().getId();
 		editItem = true;
 	}
 	
@@ -125,23 +114,16 @@ public class NotaBean implements Serializable {
 	
 	
 	public void appendItem() {
-		if(idProduto == null) {
-			return;
-		}
-		Produto p = pdao.buscaPorId(idProduto);
-		if(p == null) {
-			return;
-		}
+		//Produto p = pdao.buscaPorId(idProduto);
 		if(editItem) {
 			nota.getItens().remove(indexItem);
 			item.setId(null);
 		}
-		item.setProduto(p);
+		//item.setProduto(p);
 		item.setNotaFiscal(nota);
 		item.setValorUnitario(item.getProduto().getPreco());
 		nota.getItens().add(item);
 		item = new Item();
-		idProduto = null;
 		editItem = false;
 		message = "Item Adicionado com Sucesso!";
 	}
@@ -160,7 +142,6 @@ public class NotaBean implements Serializable {
 		editItem = false;
 		indexItem = -1;
 		editNota = false;
-		idProduto = null;
 	}
 	
 	
@@ -169,7 +150,6 @@ public class NotaBean implements Serializable {
 		nota = new NotaFiscal();
 		item = new Item();
 		editItem = false;
-		idProduto = null;
 	}
 	
 }

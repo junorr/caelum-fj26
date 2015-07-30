@@ -32,6 +32,25 @@ public class ProdutoBean {
 	
 	private String message = "";
 	
+	private Long id;
+	
+	
+	public Long getId() {
+		return id;
+	}
+	
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	
+	public void loadProduto() {
+		if(id != null) {
+			produto = dao.buscaPorId(id);
+		}
+	}
+	
 	
 	public Produto getProduto() {
 		return produto;

@@ -18,7 +18,7 @@
 		<p:dataTable value="#{nf.dataModel}" var="nota"
 				paginator="true" rows="10" lazy="true">
 			<p:column headerText="CNPJ">
-				#{nota.cnpj}
+				<h:outputText value="#{nota.cnpj}" converter="cnpj"/>
 			</p:column>
 			
 			<p:column headerText="Data">
@@ -66,7 +66,7 @@
 			<h4>Dados da Nota Fiscal</h4>
 			<h:panelGrid columns="2">
 				<h:outputLabel value="CNPJ:" for="icnpj"/>
-				<p:inputMask mask="99.999.999/9999-99" value="#{nf.nota.cnpj}"/>
+				<p:inputMask mask="99.999.999/9999-99" value="#{nf.nota.cnpj}" converter="cnpj"/>
 
 				<h:outputLabel value="Data:" for="idata"/>
 				<p:calendar pattern="dd/MM/yyyy" value="#{nf.nota.data.time}"/>
@@ -124,6 +124,7 @@
 				</p:column>
 			</p:dataTable>
 			
+			<br/>
 			<p:commandButton value="Novo Item" icon="fa fa-plus" type="button"
 					style="position: relative; margin-left: 44%;" 
 					onclick="PF('wdlg_item').show()"/>
@@ -138,12 +139,13 @@
 			
 		<h:form id="form-dlg-item">
 			<h4>Dados do Produto</h4>
-			<h:panelGrid columns="2">
+			<h:panelGrid columns="2" style="position: relative; left -100px;">
 				<h:outputLabel value="Produto:" for="iprod"/>
-				<p:selectOneMenu id="iprod" value="#{nf.idProduto}" style="width: 130px;">
+				<p:selectOneMenu id="iprod" value="#{nf.item.produto}"
+						converter="#{prodconv}" style="width: 130px;">
 					<f:selectItem itemLabel="Selecione" itemValue=""/>
 					<f:selectItems value="#{produtoBean.produtos}" var="prod" 
-							itemLabel="#{prod.nome}" itemValue="#{prod.id}"/>
+							itemLabel="#{prod.nome}" itemValue="#{prod}"/>
 				</p:selectOneMenu>
 					<h:outputLabel value="Quantidade:" for="iqtd"/>		
 				<p:inputText id="iqtd" value="#{nf.item.quantidade}"
@@ -151,16 +153,15 @@
 	
 				<h:inputHidden id="hidden-id" value="#{nf.item.id}"/>
 	
-				<h:panelGroup>
+				<h:panelGroup style="position: relative; left: -100px; top: 10px;">
 					<p:commandButton value="Salvar Item" action="#{nf.appendItem()}"
 							icon="fa fa-save"
 							oncomplete="PF('wdlg_item').hide()"
 							process=":form-dlg-item" 
 							update=":form-dlg-item :form-dlg-nota"/>
-					&#160;&#160;
 		
 					<p:commandButton value="Cancelar" action="#{nf.clearItem()}"
-							style="display: #{nf.editItem ? 'inline' : 'none'};"
+							style="position: relative; left: 125px; top: -25px;"
 							icon="fa fa-ban"
 							oncomplete="PF('wdlg_item').hide()"
 							process=":form-dlg-item"

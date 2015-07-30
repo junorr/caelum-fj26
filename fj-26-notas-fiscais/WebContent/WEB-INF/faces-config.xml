@@ -8,5 +8,18 @@
 	<lifecycle>
 		<phase-listener>br.com.caelum.notasfiscais.listener.LoginListener</phase-listener>
 	</lifecycle>
+	
+	<application>
+		<resource-bundle>
+			<base-name>br.com.caelum.notasfiscais.messages.lang</base-name>
+			<var>bundle</var>
+		</resource-bundle>
+		
+		<locale-config>
+			<default-locale>pt</default-locale>
+			<supported-locale>pt</supported-locale>
+			<supported-locale>en</supported-locale>
+		</locale-config>
+	</application>
 
 </faces-config>

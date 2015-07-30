@@ -1,0 +1,12 @@
+package br.com.caelum.notasfiscais.converter;
+
+import javax.faces.convert.FacesConverter;
+
+import br.com.caelum.notasfiscais.modelo.Produto;
+
+@FacesConverter(forClass=Produto.class)
+public class NotaConverter {
+
+	public 
+	
+}
